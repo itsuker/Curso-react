@@ -3,8 +3,7 @@
 1.  **yarn** ejecutar esto para instalar dependencias
 2.  **yarn dev** Para correr dependencias
 3.   **yarn add prop-types** Instalar prototypes
-
-
+3.  **yarn add sass** instalar sass
 
 
 

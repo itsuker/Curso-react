@@ -35,12 +35,17 @@ export const CounterApp = ({ value }) => {
 
   return (
     <>
+    <div className='contenido'>
       <h1>CounterApp</h1>
       <h2>{counter}</h2>
       <button onClick={maouseEvent /*Evento de mauseEvent sumar +1 */}>+1</button>
       <button onClick={maouseEventRestar   /*Evento de mauseEvent sumar -1 */     } >-1</button>
-      <button className='morado' onClick={mauseReset    /*Evento de mauseReset evento que reinicia los valores */     } >Reset</button> 
+      <button className='contenido__boton' onClick={mauseReset    /*Evento de mauseReset evento que reinicia los valores */     } >Reset</button> 
+      </div>
     </>
+
+    
+
     /*
        <button onClick={(event ) => maouseEvent(event ,"hola")}>+1</button> //Esto es cuando se manda mas parametros 
   <button onClick={(event ) => maouseEvent(event)}>+1</button> //Esto no es necesario solo con mandar la funcion solo cuando son mas parametros    
