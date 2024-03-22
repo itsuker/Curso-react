@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import React from 'react'
+import React, { useState } from 'react'; //Libreria de useState el useState es una fucion
+
 /*
 function maouseEvent (event ,newValue) //esto por si manda mas parametros
 {
@@ -10,24 +11,35 @@ function maouseEvent (event ,newValue) //esto por si manda mas parametros
 
 
 
-export const CounterApp = ({value}) => {
+export const CounterApp = ({ value }) => {
+
+  //Esto es una destruracion del retorno de una funcion
+  const [counter, setCounter] = useState(value);  //Tambien el estado empieza en 0  o numero o variable sera lo que saldra
+
 
   //Funcion mause evento 
-const maouseEvent = () =>
-{
-  console.log('+1');
-  value += 1;
+  const maouseEvent = () => {
+    // setCounter(counter + 1); //cuando mandallamar el setCOunter el stado del hook cambio es necesaro renderizar el componente
+    setCounter((c) => c + 1); //valor de retorno va ser el nuevo valor tendra el counter  del callback
+  }
 
-}
+  const maouseEventRestar = () =>{ 
+    setCounter( counter - 1);
+  }
+
+  const mauseReset  = ()=>{
+    setCounter(value);
+   //setCounter((c) => c = 20)
+  }
 
 
   return (
     <>
-    <h1>CounterApp</h1>
-    <h2>{value}</h2>
-
-    <button onClick={maouseEvent}>+1</button>
-
+      <h1>CounterApp</h1>
+      <h2>{counter}</h2>
+      <button onClick={maouseEvent /*Evento de mauseEvent sumar +1 */}>+1</button>
+      <button onClick={maouseEventRestar   /*Evento de mauseEvent sumar -1 */     } >-1</button>
+      <button className='morado' onClick={mauseReset    /*Evento de mauseReset evento que reinicia los valores */     } >Reset</button> 
     </>
     /*
        <button onClick={(event ) => maouseEvent(event ,"hola")}>+1</button> //Esto es cuando se manda mas parametros 
