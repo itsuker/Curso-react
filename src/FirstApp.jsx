@@ -56,8 +56,8 @@ import PropTypes from 'prop-types'; //Paquete para establecer propiedades un tip
 
 //Aqui se establece el tipo de dato que acepta esta  variable
 FirstApp.propTypes =  {
-  title: PropTypes.string.isRequired,
-  subtitle:PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,  //datos requeridos string
+  subtitle:PropTypes.string.isRequired //datos requeridos string
 }
 
 //Esto es para poner dato por defecto ,pero siempre van entrar antes
