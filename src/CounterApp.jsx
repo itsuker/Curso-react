@@ -35,7 +35,7 @@ export const CounterApp = ({ value }) => {
 
   return (
     <>
-    <div className='contenido'>
+    <div className='contenido contenedor'>
       <h1>CounterApp</h1>
       <h2>{counter}</h2>
       <button onClick={maouseEvent /*Evento de mauseEvent sumar +1 */}>+1</button>
