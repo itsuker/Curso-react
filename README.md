@@ -1,9 +1,16 @@
-# Correr archivos de react
 
-1.  **yarn** ejecutar esto para instalar dependencias
-2.  **yarn dev** Para correr dependencias
+
+
+# Para instalar dependecias o librerias necesarias paso a paso
+1.   Hacer cd ala carpeta instalar y  luego yarn create vite ,finalmente dar el nombre al proyecto
+2.  **yarn** ejecutar esto para instalar dependencias
 3.   **yarn add prop-types** Instalar prototypes
-3.  **yarn add sass** instalar sass
+4.  **yarn add sass** instalar sass
+
+# Correr archivos de react o compilar
+1.  **yarn dev** Para correr dependencias
+2.  **yarn build** Para comprimir arhivos
+
 
 
 
