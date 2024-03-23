@@ -23,6 +23,7 @@ export const CounterApp = ({ value }) => {
     setCounter((c) => c + 1); //valor de retorno va ser el nuevo valor tendra el counter  del callback
   }
 
+    //Funcion mause evento restar
   const maouseEventRestar = () =>{ 
     setCounter( counter - 1);
   }

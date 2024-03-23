@@ -7,6 +7,7 @@
 3.  **yarn add prop-types** Instalar prototypes
 4.  **yarn add sass** instalar sass
 5.  **yarn add --dev jest** Esta libreria es para hacer test
+6.  **yarn add -D @types/jest** Este es el libreria del intelicenses de jest 
 
 # Correr archivos de react o compilar
 1.  **yarn dev** Para correr dependencias
