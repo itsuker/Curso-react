@@ -4,12 +4,14 @@
 # Para instalar dependecias o librerias necesarias paso a paso
 1.   Hacer cd ala carpeta instalar y  luego yarn create vite ,finalmente dar el nombre al proyecto
 2.  **yarn** ejecutar esto para instalar dependencias
-3.   **yarn add prop-types** Instalar prototypes
+3.  **yarn add prop-types** Instalar prototypes
 4.  **yarn add sass** instalar sass
+5.  **yarn add --dev jest** Esta libreria es para hacer test
 
 # Correr archivos de react o compilar
 1.  **yarn dev** Para correr dependencias
 2.  **yarn build** Para comprimir arhivos
+3.  **yarn test** Esto para correr el testing
 
 
 
